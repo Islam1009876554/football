@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BekishevSHOP</title>
+    <link rel="icon" type="image/webp" href="images/0xf09f9889.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpeg" alt="BekishevSHOP Logo" class="site-logo">
+            <h1>BekishevSHOP</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <img src="images/free-icon-home-1946488.png" alt="Home" class="nav-icon">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#products">
+                        <img src="images/free-icon-cubes-2875986.png" alt="Products" class="nav-icon">
+                        Продукция
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacts">
+                        <img src="images/free-icon-contact-5312390.png" alt="Contacts" class="nav-icon">
+                        Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="about-site-btn">
+                        <img src="images/free-icon-information-17930851.png" alt="About" class="nav-icon">
+                        О Сайте
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="cart" class="cart">
+            <span>Корзина: </span><span id="cart-count">0</span>
+            <button id="cart-icon">🛒</button>
+        </div>
+    </header>
+    
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Корзина</h2>
+            <ul id="cart-items-list">
+            </ul>
+            <button id="clear-cart">Очистить корзину</button>
+            <button id="close-cart">Закрыть</button>
+        </div>
+    </div>
+    
+    <main>
+        <section id="home">
+            <video autoplay muted loop playsinline>
+                <source src="images/background2.mp4" type="video/mp4">
+            </video>
+            <div class="welcome-container">
+                <div class="welcome-content">
+                    <div class="welcome-visual fade-in">
+                        <img src="images/鬼道-有人-kidou-yuuto.gif" alt="BekishevSHOP" class="welcome-gif">
+                    </div>
+                    <div class="welcome-text fade-in-delayed">
+                        <h1 class="animated-title">BekishevSHOP</h1>
+                        <div class="subtitle-wrapper">
+                            <span class="subtitle-line"></span>
+                            <h2 class="subtitle">Готовые принты</h2>
+                        </div>
+                        <p class="description">
+                            Широкий выбор готовых принтов на любой вкус. От классики до современных трендов - 
+                            найдите свой идеальный дизайн на футболках, толстовках, кружках, постерах, а также наш мерч - плюшевые игрушки.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#products" class="btn btn-primary">Смотреть коллекцию</a>
+                            <a href="#about-us" class="btn btn-secondary">О нас</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="about-container">
+                <div class="about-text-wrapper">
+                    <div class="about-text">
+                        <h2 class="animated-title">О нас</h2>
+                        <p class="about-description">
+                            Мы - команда, предлагающая широкий ассортимент товаров с готовыми принтами. В нашем каталоге вы найдете футболки, толстовки, кружки, постеры, а также наш мерч - плюшевые игрушки с уникальными дизайнами. Каждый принт и товар тщательно подобран, чтобы сделать ваш выбор особенным.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <span class="feature-icon">🎨</span>
+                                <p>Готовые принты</p>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✨</span>
+                                <p>Высокое качество</p>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🌟</span>
+                                <p>Быстрая доставка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-gif-container">
+                    <img src="images/inazuma-eleven-ina11.gif" alt="Character Gif" class="animated-gif" />
+                </div>
+            </div>
+        </section>
+
+        <section id="characters">
+            <video autoplay muted loop playsinline>
+                <source src="images/credit-background.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <h2 class="section-title">Вдохновение Коллекции</h2>
+                <p class="inspiration-description">
+                    Автор глубоко вдохновлен миром Inazuma Eleven, его уникальными персонажами и захватывающей историей. 
+                    Эта страсть к серии нашла отражение в каждом элементе нашей коллекции, 
+                    где особое внимание уделено деталям и характерам любимых героев.
+                </p>
+                <audio id="characters-background-music" loop>
+                    <source src="music/PR1SVX - Emeralds (mp3cut.net).mp3" type="audio/mpeg">
+                </audio>
+                <div class="character-bio">
+                    <div class="character-card" data-character="Kidou" data-sound="kidou.mp3">
+                        <div class="character-image">
+                            <img src="images/TikVideo.App_6960666100031900933-hd-_online-video-cutter.com_.gif" alt="Kidou Yuuto">
+                        </div>
+                        <img src="images/29_Kidou_Yuuto_puppet_29_29.webp" alt="Kidou Sticker" class="character-sticker kidou-sticker">
+                        <div class="character-info"></div>
+                        <div class="sound-indicator">🔊</div>
+                    </div>
+
+                    <div class="character-card" data-character="Endou" data-sound="endou.mp3">
+                        <div class="character-image">
+                            <img src="images/ee4353cffcbc6f1fbee2de7f554bdbc4.gif" alt="Endou Mamoru">
+                        </div>
+                        <img src="images/29_Endou_Mamoru_puppet_29_29.webp" alt="Endou Sticker" class="character-sticker endou-sticker">
+                        <div class="character-info"></div>
+                        <div class="sound-indicator">🔊</div>
+                    </div>
+
+                    <div class="character-card" data-character="Gouenji" data-sound="gouenji.mp3">
+                        <div class="character-image">
+                            <img src="images/inazuma-eleven-ina1111.gif" alt="Gouenji Shuuya">
+                        </div>
+                        <img src="images/29_Gouenji_Shuuya_puppet_29_29.webp" alt="Gouenji Sticker" class="character-sticker gouenji-sticker">
+                        <div class="character-info"></div>
+                        <div class="sound-indicator">🔊</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="products-container">
+                <h2 class="products-title">Наши товары</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-images">
+                            <div class="image-wrapper front">
+                                <img src="images/Без названия.png" alt="Футболка с принтом спереди" class="product-image">
+                            </div>
+                            <div class="image-wrapper back">
+                                <img src="images/Без названия (1).png" alt="Футболка с принтом сзади" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Футболка с принтом</h3>
+                            <div class="product-price">
+                                <span>от 5000 ₸</span>
+                                <span class="price-range">до 6500 ₸</span>
+                            </div>
+                            <p class="product-description">Стильные футболки с готовыми принтами для вашего гардероба.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">100% хлопок</span>
+                                <span class="feature-tag">Принт не выцветает</span>
+                                <span class="feature-tag">Все размеры</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCartWithSize('Футболка с принтом', 'images/Без названия.png')">
+                                <span class="btn-icon">🛍️</span>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </button>
+                        </div>
+                    </div>
+        
+                    <div class="product-card">
+                        <div class="product-images">
+                            <div class="image-wrapper front">
+                                <img src="images/Без названия3.png" alt="Толстовка с принтом спереди" class="product-image">
+                            </div>
+                            <div class="image-wrapper back">
+                                <img src="images/Без названия (2).png" alt="Толстовка с принтом сзади" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Толстовка с принтом</h3>
+                            <div class="product-price">
+                                <span>от 8000 ₸</span>
+                                <span class="price-range">до 9500 ₸</span>
+                            </div>
+                            <p class="product-description">Комфортные толстовки с яркими готовыми принтами.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Тёплый материал</span>
+                                <span class="feature-tag">Качественная печать</span>
+                                <span class="feature-tag">Все размеры</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCartWithSize('Толстовка с принтом', 'images/Без названия3.png')">
+                                <span class="btn-icon">🛍️</span>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-images">
+                            <div class="image-wrapper front">
+                                <img src="images/a-mug-with-a-beautiful-background-.png" alt="Кружка с принтом" class="product-image">
+                            </div>
+                            <div class="image-wrapper back">
+                                <img src="images/mug-close-up-background-black.png" alt="Кружка с принтом крупным планом" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Кружка с принтом</h3>
+                            <div class="product-price">
+                                <span>от 2000 ₸</span>
+                                <span class="price-range">до 3500 ₸</span>
+                            </div>
+                            <p class="product-description">Практичные кружки с готовыми принтами для ваших любимых напитков.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Качественная керамика</span>
+                                <span class="feature-tag">Стойкий принт</span>
+                                <span class="feature-tag">Можно мыть</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCartWithSize('Кружка с принтом', 'images/a-mug-with-a-beautiful-background-.png')">
+                                <span class="btn-icon">🛍️</span>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-images">
+                            <div class="image-wrapper front">
+                                <img src="images/wall-poster.png" alt="Постер для стены" class="product-image">
+                            </div>
+                            <div class="image-wrapper back">
+                                <img src="images/wall-poster (1).png" alt="Постер для стены вид сбоку" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Постер для стены</h3>
+                            <div class="product-price">
+                                <span>от 1500 ₸</span>
+                                <span class="price-range">до 6000 ₸</span>
+                            </div>
+                            <p class="product-description">Стильные постеры с готовыми принтами для украшения вашего интерьера.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Качественная печать</span>
+                                <span class="feature-tag">Разные размеры</span>
+                                <span class="feature-tag">Яркие цвета</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCartWithSize('Постер для стены', 'images/wall-poster.png')">
+                                <span class="btn-icon">🛍️</span>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-images">
+                            <img src="images/kidou_yuuto_5203862_1.jpg" alt="Плюшевая игрушка Kidou Yuuto" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Плюшевая игрушка Kidou Yuuto</h3>
+                            <div class="product-price">
+                                <span>от 3500 ₸</span>
+                                <span class="price-range">до 7000 ₸</span>
+                            </div>
+                            <p class="product-description">Мягкая плюшевая игрушка персонажа Kidou Yuuto из аниме Inazuma Eleven.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Мягкий материал</span>
+                                <span class="feature-tag">Высокое качество</span>
+                                <span class="feature-tag">30 см</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCartWithSize('Плюшевая игрушка Kidou Yuuto', 'images/kidou_yuuto_5203862_1.jpg')">
+                                <span class="btn-icon">🛍️</span>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-images">
+                            <img src="images/Без названия.jpeg" alt="Плюшевая Игрушка Endou Mamoru" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Плюшевая Игрушка Endou Mamoru</h3>
+                            <div class="product-price">
+                                <span>от 3500 ₸</span>
+                                <span class="price-range">до 7000 ₸</span>
+                            </div>
+                            <p class="product-description">Мягкая плюшевая игрушка персонажа Endou Mamoru из аниме Inazuma Eleven.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Мягкий материал</span>
+                                <span class="feature-tag">Высокое качество</span>
+                                <span class="feature-tag">30 см</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCartWithSize('Плюшевая Игрушка Endou Mamoru', 'images/Без названия.jpeg')">
+                                <span class="btn-icon">🛍️</span>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="background-image"></div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2 class="contact-title">Свяжитесь с нами</h2>
+                    <p class="contact-subtitle">Наши менеджеры всегда готовы помочь вам с выбором</p>
+                    <form action="#" class="form">
+                        <div class="form-group">
+                            <input type="text" 
+                                   name="name" 
+                                   placeholder="Ваше имя" 
+                                   required 
+                                   autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" 
+                                   name="email" 
+                                   placeholder="Ваш email" 
+                                   required 
+                                   autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" 
+                                      placeholder="Ваше сообщение" 
+                                      required 
+                                      style="resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024-2025 BekishevSHOP. Все права защищены.</p>
+    </footer>
+
+    <div id="mini-popup" class="mini-popup hidden">
+        <img id="popup-character" src="images/0xf09f918b.webp" alt="Персонаж">
+        <p id="popup-message">Добавлено в корзину!</p>
+    </div>
+
+    <div id="size-modal" class="size-modal">
+        <div class="size-modal-content">
+            <h3>Выберите размер и количество</h3>
+            <div class="size-quantity-form">
+                <div class="size-select-wrapper">
+                    <label for="modal-size-select">Размер:</label>
+                    <select id="modal-size-select">
+                        <!-- Опции удут добавляться динамически через JavaScript -->
+                    </select>
+                </div>
+                <div class="quantity-select-wrapper">
+                    <label for="modal-quantity">Количество:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" id="modal-quantity" value="1" min="1" max="99">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="add-to-cart-confirm" class="btn-primary">Добавить в корзину</button>
+                <button id="cancel-size-select" class="btn-secondary">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-site-modal" class="about-site-modal">
+        <div class="about-site-content">
+            <div class="about-site-header">
+                <h2>О Сайте</h2>
+                <button class="close-about-site">&times;</button>
+            </div>
+            <div class="about-site-body">
+                <div class="floating-image">
+                    <img src="images/Без названия (1) (1).jpeg" alt="About Site Image">
+                </div>
+                <div class="about-site-text">
+                    <p>Этот сайт был создан с любовью и энтузиазмом примерно за 2 недели. В нём воплощены современные технологии веб-разработки и дизайна.</p>
+                    <p>Сайт находится в постоянном развитии, и в будущем будет дополняться новыми функциями и возможностями. У создателя множество интересных идей и планов по улучшению проекта, которые постепенно будут воплощаться в жизнь.</p>
+                    <audio id="background-music" loop>
+                        <source src="music/PR1SVX - CRYSTALS (Slowed) (mp3cut.net).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="helper-character" class="helper-character">
+        <img src="" alt="Helper Character" class="helper-image">
+        <div class="speech-bubble">
+            <p id="fact-text"></p>
+        </div>
+    </div>
+
+    <div class="character-modal">
+        <div class="character-modal-overlay"></div>
+        <div class="character-modal-content">
+            <button class="modal-close-btn">&times;</button>
+            <div class="character-modal-inner">
+                <div class="character-images">
+                    <div class="character-main-image"></div>
+                    <div class="character-chibi-image"></div>
+                </div>
+                <div class="character-details">
+                    <h2 class="character-name"></h2>
+                    <div class="character-position-number">
+                        <span class="position"></span>
+                        <span class="number"></span>
+                    </div>
+                    <p class="character-description"></p>
+                    <div class="character-stats"></div>
+                    <div class="character-techniques">
+                        <h3>Техники</h3>
+                        <div class="techniques-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="ai-toggle-btn">
+        <img src="images/_♡︎𝒌𝒊𝒅𝒐𝒖.jpeg" alt="AI Assistant">
+    </button>
+
+    <div class="ai-chat-container">
+        <div class="ai-chat-header">
+            <div style="display: flex; align-items: center;">
+                <img src="images/_♡︎𝒌𝒊𝒅𝒐𝒖.jpeg" alt="AI Avatar" class="ai-avatar">
+                <span>Ваш AI Помощник</span>
+                <div class="ai-status"></div>
+            </div>
+            <button class="close-chat">&times;</button>
+        </div>
+        <div class="ai-chat-messages">
+            <!-- Сообщения будут добавляться динамически -->
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" placeholder="Напишите сообщение...">
+            <button>
+                <span>Отправить</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
